@@ -53,6 +53,12 @@ app.get('/bad',(req,res) => {
     });
 });
 
+app.get('/contact',(req,res) =>{
+    res.render('contact.hbs',{
+        pageTitle: "Contact Email"
+    });
+});
+
 app.use(express.static(__dirname+ '/public'));
 
 app.listen(port,()=>{
